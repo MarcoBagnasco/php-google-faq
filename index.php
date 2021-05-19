@@ -31,14 +31,43 @@ $faqs = [
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google FAQ</title>
+    
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700&family=Roboto&display=swap" rel="stylesheet">
 
     <!-- STYLE -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- SITE HEADER -->
+    <header>
+        <!-- Top Header -->
+        <div class="top-header flex jc-between">
+            <!-- Google Privacy -->
+            <div class="flex ai-center">
+                <img src="./img/googlelogo.svg" alt="google logo">
+                <span class="privacy">Privacy e termini</span>
+            </div>
+            <!-- User -->
+            <div class="flex ai-center">
+                <svg><path fill="#5f6368" d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
+                <img class="user" src="./img/user.png" alt="user logo">
+            </div>
+        </div>
+
+        <!-- Bottom Header -->
+        <div class="bottom-header flex">
+            <ul class="flex">
+                <li>Introduzione</li>
+                <li>Norme sulla privacy</li>
+                <li>Termini di servizio</li>
+                <li>Tecnologie</li>
+                <li class="active">Domande Frequenti</li>
+            </ul>
+        </div>
+    </header>
+
     <!-- SITE MAIN -->
     <main class="container">
         <?php foreach($faqs as $faq) { ?>
@@ -54,9 +83,10 @@ $faqs = [
             <ul class="flex">
                <li><a href="https://www.google.com/">Google</a></li> 
                <li><a href="https://about.google/">Tutto su Google</a></li> 
-               <li><a href="privacy">Privacy</a></li> 
-               <li><a href="terms">Termini</a></li> 
+               <li><a href="https://policies.google.com/privacy">Privacy</a></li> 
+               <li><a href="https://policies.google.com/terms">Termini</a></li> 
             </ul>
+            
             <!-- Language -->
             <div class="flex ai-center">
                 <img src="./img/lang.png" alt="lang icon">

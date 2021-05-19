@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 body{
+    padding-top: 100px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
@@ -57,6 +58,48 @@ ul{
     justify-content: space-between;
 }
 
+/* SITE HEADER */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #5f6368;
+    background-color: #fff;
+    border-bottom: 1px solid #cbcbcb;
+}
+/* Top Header */
+.top-header .privacy{
+    padding-left: 5px;
+    font-size: 22px;
+}
+.top-header svg{
+    width: 25px;
+    height: 25px;
+}
+.top-header .user{
+    margin-left: 20px;
+    border-radius: 50%;
+}
+/* Bottom Header */
+.bottom-header{
+    height: 40px;
+    font-size: 15px;
+}
+.bottom-header li{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.bottom-header li.active{
+    color: #3367d6;
+    border-bottom: 3px solid #3367d6;
+}
+
 /* SITE MAIN */
 main.container{
     padding: 32px;
@@ -86,7 +129,7 @@ footer li:not(:first-child)::before{
 footer li a{
     color: rgba(61,61,61,.8);
 }
-
+/* Language */
 footer select{
     margin-left: 6px;
     outline: none;
