@@ -1,0 +1,53 @@
+/* GENERAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+h2{
+    padding-top: 64px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 24px;
+    color: #3c4043; 
+}
+h3{
+    padding-top: 52px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    color: #3c4043;
+    line-height: 26px;
+}
+p{
+    margin: 10px 0;
+    padding-top: 20px;
+    line-height: 24px;
+}
+h2 + p,
+h3 + p{
+    margin-top: 0;
+}
+a{
+    text-decoration: none;
+    color: #3367d6;
+}
+
+/* UTILITIES */
+.container{
+    max-width: 1045px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+/* SITE MAIN */
+/* Main List */
+main ol{
+    margin-left: 16px;
+}
+main ol li{
+    padding: 12px 0 0 16px;
+    line-height: 24px;
+}
